@@ -33,6 +33,9 @@ public class HelloWorldExercises {
          */
 
         // 5. Imprime tu edad, tu color favorito y tu ciudad.
+        System.out.println("Edad: 29");
+        System.out.println("Color: Azul");
+        System.out.println("Ciudad: CDMX");
 
         
 
