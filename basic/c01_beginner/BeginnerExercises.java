@@ -19,7 +19,7 @@ public class BeginnerExercises {
         // 5. Declara una constante con tu email.
         final String EMAIL = "tuemail@ejemplo.com";
         // 6. Crea una variable de tipo char y guárdale tu inicial.
-        char inicil = 'C';
+        char inicial = 'C';
         // 7. Declara una variable de tipo String con tu localidad, y a continuación cambia su valor y vuelve a imprimirla.
         String localidad = "Ciudad de Mexico";
         System.out.println("Localidad original: " + localidad);
@@ -44,7 +44,7 @@ public class BeginnerExercises {
         System.out.println("Altura: " + altura + " metros");
         System.out.println("¿Te gusta programar?: " + gustaProgramar);
         System.out.println("Email: " + EMAIL);
-        System.out.println("Inicial: " + inicial);
+        System.out.println("Inicial: " + Inicial);
 
 
 
