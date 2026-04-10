@@ -44,7 +44,7 @@ public class BeginnerExercises {
         System.out.println("Altura: " + altura + " metros");
         System.out.println("¿Te gusta programar?: " + gustaProgramar);
         System.out.println("Email: " + EMAIL);
-        System.out.println("Inicial: " + Inicial);
+        System.out.println("Inicial: " + inicial);
 
 
 
