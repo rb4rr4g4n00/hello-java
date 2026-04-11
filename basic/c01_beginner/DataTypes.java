@@ -1,36 +1,53 @@
-package basic.c01_beginner;
-
-/*
-Clase 16 - Tipos de datos primitivos
-Vídeo: https://youtu.be/JOAqpdM36wI?t=6211
-*/
-
 public class DataTypes {
 
     public static void main(String[] args) {
 
         // Tipos de datos primitivos
+        // Definición y asignacion de Variables - tipo, nombre y el valor asignado
+        int variableEntero = 45;
+        int variableEntero2 = 50;
 
-        int myInt = 37;
-        System.out.println(myInt);
 
-        double myDouble = 1.77;
-        System.out.println(myDouble);
+        System.out.println(variableEntero);
+        System.out.println(variableEntero2);
 
-        // float, long, byte
+        // Nomenclatura para escirbir - camelCase
+        // Nomenclatura para escribir - snake_case 
 
-        char myChar = 'a';
-        System.out.println(myChar);
+        double variableDecimal = 20.5;
+        System.out.println(variableDecimal);
 
-        boolean myBoolean = true;
-        myBoolean = false;
-        System.out.println(myBoolean);
+        char variableChar = 'a'; //char siempre va entre comilla simple ''
+        System.out.println(variableChar);
 
-        String myString = "Hola, Java";
-        System.out.println(myString);
+        boolean variableBooleanCierto = true;
+        boolean variableBooleanFalso = false;
+        System.out.println(variableBooleanCierto);
+        System.out.println(variableBooleanFalso);
 
-        // Tipo de dato en tiempo de compilación
+        
+        boolean variableBoolean = true; //Definicion y asignacion
+        System.out.println(variableBoolean);
+        //Asignacion de valor - nombre y el valor    nombre = valor
+        variableBoolean = false;//asignacion
+        System.out.println(variableBoolean);
 
-        System.out.println(myString.getClass().getSimpleName());
+
+        // Definicion
+        boolean variableBoolean1;
+        //Asignacion
+        variableBoolean1 = true;
+
+
+        long variableLong = 1000L;
+        System.out.println(variableLong);
+        
+
+        //No primitivos
+
+        String variableString = "Raul Barragan"; //Los String siempre van entre ""
+        System.out.println(variableString);
+
+        // System.out.println(myString.getClass().getSimpleName());
     }
 }
