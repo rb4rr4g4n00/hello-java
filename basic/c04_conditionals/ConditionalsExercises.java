@@ -43,7 +43,7 @@ public class ConditionalsExercises {
         }
         // 5. Verifica si un número está en el rango de 1 a 100.
         int valor = 50;
-        if (valor >= 1 (( valor <= 100))) {
+        if (valor >= 1 && valor <= 100) {
             System.out.println("Esta en el rango");
         }else {
             System.out.println("Esta fuera del rango");
