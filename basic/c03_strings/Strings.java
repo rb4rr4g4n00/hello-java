@@ -9,10 +9,30 @@ public class Strings {
         Vídeo: https://youtu.be/JOAqpdM36wI?t=8140
         */
 
-        // Declaración
+        //Primitivos
+        // int
+        // char
+        // boolean
 
-        String name = "Brais";
-        var surname = new String("Moure");
+
+        //No primitivos
+        // String
+
+
+        // API 
+        // Interface Programming Application 
+        // Redes conectate a una API. 
+
+        // Es un conjunto de reglas, clases, paquetes e interfaces predefinidas.
+
+
+
+        // Declaración
+        String name = "Raul";
+        String lastname = "Barragan";
+
+        String apellidoMaterno = new String("Martinez");
+
 
         // Operaciones básicas
 
@@ -22,7 +42,9 @@ public class Strings {
         */
 
         // Concatenación
-        System.out.println(name + " " + surname);
+        System.out.println(name + " " + lastname );
+        System.out.println(name + "\n" + lastname );
+
 
         /*
         Clase 26 - length
@@ -30,6 +52,7 @@ public class Strings {
         */
 
         // Longitud
+        System.out.println("La longitud de " + name + " es:");
         System.out.println(name.length());
 
         /*
@@ -38,7 +61,20 @@ public class Strings {
         */
 
         // Obtener carácter
-        System.out.println(name.charAt(name.length() - 1));
+        // 0 1 2 3
+        // R a u l
+        System.out.println(name.charAt(3));
+
+        String nombreCliente = "Carlos Barragan Monter";
+        char inicialNombre = nombreCliente.charAt(0);
+
+        if (inicialNombre == 'I'){
+            System.out.println("Cliente valido");
+        }else{
+            System.out.println("Cliente NO valido");
+
+        }
+
 
         /*
         Clase 28 - substring
@@ -46,8 +82,12 @@ public class Strings {
         */
 
         // Subcadena
-        System.out.println(name.substring(2));
-        System.out.println(name.substring(1, 3));
+        // 0 1 2 3 4 5 6 7 8 9 10 11
+        // E s t e   m e n s a j  e 
+
+        String mensaje = "Este mensaje";
+        System.out.println(mensaje.substring(5));
+        System.out.println(mensaje.substring(2, 7)); // t e   m e
 
         /*
         Clase 29 - toUpperCase / toLowerCase
@@ -55,10 +95,11 @@ public class Strings {
         */
 
         // Mayúsculas y minúsculas
-        System.out.println(name.toUpperCase());
-        System.out.println(name.toLowerCase());
+        System.out.println(name);               // Raul
+        System.out.println(name.toUpperCase()); // RAUL
+        System.out.println(name.toLowerCase()); // raul
 
-        System.out.println(name);
+        // raul barragan toUpperCase -> RAUL BARRAGAN
 
         /*
         Clase 30 - contains
@@ -66,8 +107,19 @@ public class Strings {
         */
 
         // Comprobar si contiene
-        System.out.println("Hola, Java".contains("Brais"));
-        System.out.println("Hola, Java".toUpperCase().contains("AVA"));
+        System.out.println("/**********************************/");
+        System.out.println("Contains");
+
+
+        String mensajeLargo = "El dia de hoy comi pechuga y tome agua de jamaica";
+        
+        
+        System.out.println(mensajeLargo.contains("jamaica"));
+        System.out.println(mensajeLargo.contains("salchichas"));
+        System.out.println(mensajeLargo.toUpperCase().contains("AGUA"));
+        
+        System.out.println("/**********************************/");
+
 
         /*
         Clase 31 - equals
@@ -75,19 +127,23 @@ public class Strings {
         */
 
         // Comparación
-        System.out.println(name.equals("Brais"));
-        System.out.println(name.equals("brais"));
-        System.out.println(name.equalsIgnoreCase("brais"));
+        
+        String alumno1 = "Aaron"; // Cadena
+        String alumno2 = "Aaron"; // Cadena
+        String alumno3 = new String("Aaron"); // Objeto 
+
+        System.out.println("Equals");
+        System.out.println(alumno1.equals(alumno2));
+        System.out.println(alumno1.equalsIgnoreCase(alumno2));
+
+
 
         // == vs. equals
+        System.out.println(alumno1 == alumno2);
+        System.out.println(alumno1 == alumno3);
+        System.out.println(alumno1.equals(alumno3));
+        System.out.println("/**********************************/");
 
-        var a = "Brais";
-        var b = "Brais";
-        var c = new String("Brais");
-
-        System.out.println(a == b);
-        System.out.println(a == c);
-        System.out.println(a.equals(c));
 
         /*
         Clase 32 - trim y replace
@@ -95,18 +151,29 @@ public class Strings {
         */
 
         // Trim
-        System.out.println(" Hola, me llamo Brais ".trim());
-
-        // Replace
-        System.out.println(" Hola, me llamo Brais ".replace("Brais", "Moure"));
-
+        String otroMensaje = "             Este      es u    n    mensa je    diferente         ";
+        System.out.println(otroMensaje);
+        System.out.println(otroMensaje.trim());
+        
+        
+        
+        String otroMensajeDiferente = "             Este      es u    n    mensa je    diferente         ";
+        System.out.println(otroMensajeDiferente.replace("e", "i"));
         /*
         Clase 33 - format
         Vídeo: https://youtu.be/JOAqpdM36wI?t=9613
         */
 
         // Format
-        var age = 37;
-        System.out.println(String.format("Hola, %s. Tengo %d.", name, age));
+
+        String user = "Carlos";
+        int edad = 25;
+        System.out.println(String.format("Hola soy Carlos y tengo 25", user, edad));
+
+        // %s String
+        // %d int
+        // %f float
+
+
     }
 }
