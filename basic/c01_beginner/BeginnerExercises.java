@@ -16,6 +16,7 @@ public class BeginnerExercises {
         // 3. Crea una variable double con tu altura en metros.
 
         // 4. Declara una variable de tipo boolean que indique si te gusta programar.
+        boolean meGustaProgramar = true;
 
         // 5. Declara una constante con tu email.
 

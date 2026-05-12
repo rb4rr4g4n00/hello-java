@@ -9,39 +9,63 @@ public class Arrays {
 
     public static void main(String[] args) {
 
-        // Declaración y creación
-        int[] numbers = new int[3];
-        System.out.println(numbers);
+        //Declaracion y creacion
 
-        String[] names = {"Brais", "Moure", "mouredev"};
-        System.out.println(names);
+        int[] arraysEnteros = new int[5];
 
-        // Acceso
-        System.out.println(numbers[0]);
+        //  0     1     2     3     4
+        //[35]-[245]-[ 0 ]-[90]-[   ]
+
+    
+        arraysEnteros[0] = 35;
+        arraysEnteros[1] = 245;
+        arraysEnteros[2] = 0;
+        arraysEnteros[3] = 90;
+
+        System.out.println(arraysEnteros[0]);
+        System.out.println(arraysEnteros[1]);
+        System.out.println(arraysEnteros[2]);
+        System.out.println(arraysEnteros[3]);
+
+        int[] numbers = {35, 12, 14, 18};
+        //int numbers = new int[4]
+
+        //[ 35 ]-[ 12 ]-[ 14 ]-[ 18 ]
+
+
+        String[] names = {"Aaron", "Marie", "Sofia", "Joel"};
         System.out.println(names[0]);
+        System.out.println(names[1]);
+        System.out.println(names[2]);
+        System.out.println(names[3]);
 
-        System.out.println((new String[3])[0]);
 
         // Modificación
-        numbers[0] = 1;
-        numbers[1] = 10;
-        System.out.println(numbers[0]);
-        System.out.println(numbers[1]);
+        System.out.println("/***********************/");
+        System.out.println("/Modificacion/");
+        
+        
+        names[0] = "Ismael";
+        System.out.println(names[0]);
+        
+        names[3] = "Elia";
+        
+        
+        
+        System.out.println("/***********************/");
+        boolean[] booleansArray = new boolean[3];
 
-        // numbers[3] = 2; Error
 
-        System.out.println(names[2]);
-        names[2] = "mouredev@gmail.com";
-        System.out.println(names[2]);
+        boolean normal = true;
+        boolean[] arregloBool = {true, false};
 
-        System.out.println(names.length);
-        names[2] = null;
-        System.out.println(names[2]);
-        System.out.println(names.length);
+        //Cargando la informacion en los vagones
+        booleansArray[0] = true;
+        booleansArray[1] = false;
+        booleansArray[2] = true;
 
-        // numbers[2] = null; Error
-
-        boolean[] booleans = new boolean[5];
-        System.out.println(booleans[4]);
+       System.out.println(booleansArray[0]);
+       System.out.println(booleansArray[1]);
+       System.out.println(booleansArray[2]);
     }
 }
