@@ -17,13 +17,13 @@ public class StructuresExercises {
 
         // 4. Añade 4 valores al ArrayList y elimina uno a continuación.
 
-        // 5. Crea un HashSet con 2 valores diferentes.
+        // 5. Crea un HashSet con 2 valores diferentes. NO
 
-        // 6. Añade un nuevo valor repetido y otro sin repetir al HashSet.
+        // 6. Añade un nuevo valor repetido y otro sin repetir al HashSet. NO
 
-        // 7. Elimina uno de los elementos del HashSet.
+        // 7. Elimina uno de los elementos del HashSet. NO
 
-        // 8. Crea un HashMap donde la clave sea un nombre y el valor el número de teléfono. Añade tres contactos.
+        // 8. Crea un HashMap donde la clave sea un nombre y el valor el número de teléfono. Añade tres contactos. 
 
         // 9. Modifica uno de los contactos y elimina otro.
 

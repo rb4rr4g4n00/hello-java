@@ -11,49 +11,59 @@ public class Lists {
 
     public static void main(String[] args) {
 
-        // Declaración y creación
-        ArrayList<String> names = new ArrayList<>();
-        var numbers = new ArrayList<Integer>();
 
-        // Tamaño
+        // El tipo de variable   =      
+        ArrayList<String> names        =        new ArrayList<>();
 
+        System.out.println("/////////////////////////////");
+        System.out.println("Tamanio");
         System.out.println(names.size());
+
 
         // Inserción
-
-        names.add("Brais");
-        names.add("Moure");
-        names.add("MoureDev");
+        names.add("Carlos");
+        names.add("Raul");
+        names.add("Ismael");
         System.out.println(names.size());
 
-        // Acceso
 
-        System.out.println(names.getFirst());
-        System.out.println(names.get(1));
-        System.out.println(names.getLast());
+        String[] fruits = new String[3];
+        fruits[0] = "Manzana";
+
+
+        System.out.println(names.get(0));
+
 
         // Modificación
+        names.set(0, "Joel");
 
-        names.set(2, "mouredev@gmail.com");
-        System.out.println(names.getLast());
+        System.out.println(names.get(0));
+
 
         // Eliminación
+        names.remove(0);
 
-        names.remove(2);
-        // System.out.println(names.get(2)); // Error
+        System.out.println(names.get(0));
         System.out.println(names.size());
+
+        System.out.println(names);
+
 
         // Búsqueda
+        System.out.println(names.contains("Marie"));
 
-        System.out.println(names.contains("Brais"));
-        System.out.println(names.contains("mouredev@gmail.com"));
 
+        
+        
         // Limpieza
-
-        names.add("Brais");
-        System.out.println(names);
+        System.out.println(names.size());
         names.clear();
         System.out.println(names.size());
+        names.add("Octavio");
 
+        System.out.println(names);
+
+
+        System.out.println("//////////////////////////////////////////////");
     }
 }
