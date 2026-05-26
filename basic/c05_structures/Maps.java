@@ -1,5 +1,7 @@
 package basic.c05_structures;
 
+import java.util.ArrayList;
+
 /*
 Clase 43 - Maps
 Vídeo: https://youtu.be/JOAqpdM36wI?t=14574
@@ -12,62 +14,70 @@ public class Maps {
     public static void main(String[] args) {
 
         // Declaración y creación
-        HashMap<String, String> names = new HashMap<>();
-        var numbers = new HashMap<Integer, String>();
+        System.out.println("//////////Declaración y creación///////////////");
+        
+        HashMap<String, String> personas = new HashMap<>();
+        System.out.println(personas.size()); 
+        // .size() METODO
+        
+        System.out.println("//////////Insertar valores///////////////");
+        personas.put("name", "Carlos");
+        personas.put("last", "Barragan");
+        personas.put("old", "26");
+        personas.put("color", "Azul");
+        personas.put("email", "correo_cb@gmail.com");
+        
+        System.out.println(personas.size()); 
+        
+        System.out.println("//////////Acceso valores///////////////");
+        System.out.println(personas);
+        System.out.println(personas.get("old"));
+        
+        System.out.println("//////////Verificación///////////////");
+        System.out.println(personas.containsKey("job"));
+        
+        System.out.println(personas.containsValue("correo_cb@gmail.com"));
 
-        // Tamaño
+        System.out.println("//////////Eliminación///////////////");
+        System.out.println(personas);
+        System.out.println(personas.remove("email"));
+        System.out.println(personas);
 
-        System.out.println(names.size());
+        personas.put("email", "rb@gmail.com");
+        
+        System.out.println("//////////Limpieza///////////////");
+        System.out.println(personas);
+        //personas.clear();
+        System.out.println(personas);
 
-        // Inserción
+        System.out.println("//////////Modificación///////////////");
+        System.out.println(personas);
+        personas.put("email", "carlos@gmail.com");
+        personas.put("email", "carlos@gmail2.com");
+        personas.put("email", "carlos@gmail3.com");
+        System.out.println(personas);
+        
+        System.out.println(personas);
+        personas.replace("old", "30");
+        System.out.println(personas);
+        
+        System.out.println(personas);
+        personas.putIfAbsent("old", "45");
+        System.out.println(personas);
+        
+        
+        System.out.println("//////////Especiales///////////////");
+        System.out.println(personas.isEmpty());
 
-        names.put("Brais", "brais@gmail.com");
-        names.put("Moure", "moure@gmail.com");
-        names.put("MoureDev", "mouredev@gmail.com");
-        System.out.println(names.size());
-        System.out.println(names);
 
-        // Acceso
+        System.out.println(personas);
+        
+        if(!personas.isEmpty()){
+            personas.clear();
+        }
 
-        System.out.println(names.get("Moure"));
-        System.out.println(names.get("Dev"));
+        System.out.println(personas);
 
-        // Verificación
 
-        System.out.println(names.containsKey("Moure"));
-        System.out.println(names.containsKey("Dev"));
-
-        System.out.println(names.containsValue("moure@gmail.com"));
-
-        // Eliminación
-
-        System.out.println(names.remove("Moure"));
-        System.out.println(names.remove("MoureDev"));
-        System.out.println(names);
-
-        // Limpieza
-
-        names.clear();
-        System.out.println(names);
-
-        // Modificación
-
-        names.put("Brais", "brais@gmail.com");
-        System.out.println(names);
-
-        names.put("Brais", "braismouredev@gmail.com");
-        System.out.println(names);
-
-        names.replace("Moure", "mouredev@gmail.com"); // Reemplaza el valor si existe
-        System.out.println(names);
-
-        names.putIfAbsent("Moure", "mouredev@gmail.com"); // Solo lo añade si no existe
-        System.out.println(names);
-
-        // Otras operaciones
-
-        System.out.println(names.isEmpty());
-        var values = names.values();
-        System.out.println(values);
      }
 }

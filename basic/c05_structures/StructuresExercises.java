@@ -27,6 +27,6 @@ public class StructuresExercises {
 
         // 9. Modifica uno de los contactos y elimina otro.
 
-        // 10. Dado un Array, transfórmalo en un ArrayList, a continuación en un HashSet y finalmente en un HashMap con clave y valor iguales.
+        // 10. Dado un Array, transfórmalo en un ArrayList, a continuación en un HashSet NO y finalmente en un HashMap con clave y valor iguales.
     }
 }
