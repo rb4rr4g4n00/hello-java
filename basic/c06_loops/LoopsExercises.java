@@ -1,5 +1,7 @@
 package basic.c06_loops;
 
+import java.util.ArrayList;
+
 /*
 Clase 50 - Ejercicios: Bucles
 Vídeo: https://youtu.be/JOAqpdM36wI?t=17993
@@ -9,24 +11,41 @@ public class LoopsExercises {
 
     public static void main(String[] args) {
 
-        // 1. Imprime los números del 1 al 10 usando while.
+        // 1. Imprime los números del 1 al 10 usando while. NO
 
-        // 2. Usa do-while para mostrar todos los valores de un ArrayList.
+        // 2. Usa do-while para mostrar todos los valores de un ArrayList. NO
 
-        // 3. Imprime los múltiplos de 5 del 1 al 50 usando for.
+        // 3. Imprime los múltiplos de 5 del 1 al 50 usando for. SI
 
-        // 4. Recorre un Array de 5 números e imprime la suma total.
+        // 4. Recorre un Array de 5 números e imprime la suma total. SI
 
-        // 5. Usa un for para recorrer un Array y mostrar sus valores.
+        // 5. Usa un for para recorrer un Array y mostrar sus valores. SI
 
-        // 6. Usa for-each para recorrer un HashSet y un HashMap.
+        // 6. Usa for-each para recorrer un ArrayList y HashMap. SI
 
-        // 7. Imprime los números del 10 al 1 (descendiente) con un bucle for.
+        ArrayList<String> animales = new ArrayList<>();
+        animales.add("Perro");
+        animales.add("Gato");
+        animales.add("Conejo");
+        
+        for(String animal : animales){
+            System.out.println(animal);
+        }
 
-        // 8. Usa continue para saltar los múltiplos de 3 del 1 al 20.
 
-        // 9. Usa break para detener un bucle cuando encuentres un número negativo en un array.
+        // 7. Imprime los números del 10 al 1 (descendiente) con un bucle for. SI
+        //ASC 1 2 3 4 5
+        //DESC 5 4 3 2 1
+        System.out.println("Ejercicio 7. 10 al 1 desc");
+        for(int index = 10; index >= 1 ; index-- ){
+            System.out.println(index);
+        }
 
-        // 10. Crea un programa que calcule el factorial de un número dado.
+
+        // 8. Usa continue para saltar los múltiplos de 3 del 1 al 20. NO
+
+        // 9. Usa break para detener un bucle cuando encuentres un número negativo en un array. NO
+
+        // 10. Crea un programa que calcule el factorial de un número dado. NO
     }
 }

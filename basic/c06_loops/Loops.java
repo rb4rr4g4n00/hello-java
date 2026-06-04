@@ -1,12 +1,13 @@
 package basic.c06_loops;
 
+import java.util.ArrayList;
+
 /*
 Clase 45 - Bucles
 Vídeo: https://youtu.be/JOAqpdM36wI?t=15862
 */
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 
 public class Loops {
@@ -22,48 +23,81 @@ public class Loops {
 
         // - for controlado por contador
 
-        for (int index = 0; index < 5; index++) {
-            System.out.println("Hola, Java!");
+
+        for (int i = 1; i < 4; i++){
+            System.out.println("Hola Mundo");
         }
 
-        String[] names = {"Brais", "Moure", "mouredev"};
+        System.out.println("/***************************************************/");
+        
+        
+        String[] nombres = {"Carlos", "Sofia", "Ismael", "Aaron"};
 
-        for (int index = 0; index < names.length; index++) {
-            System.out.println(names[index]);
+        System.out.println(nombres.length);
+        for (int i = 0; i < nombres.length; i++ ){
+            System.out.println(nombres[i]);
         }
 
-        /*
-        Clase 47 - forEach
-        Vídeo: https://youtu.be/JOAqpdM36wI?t=16646
-        */
+        System.out.println("/***************************************************/");
+        
+        
+        for(String nombre : nombres){
+            System.out.println(nombre);
+        }
+        
+        
+        System.out.println("/***************************************************/");
+        
+        
+        ArrayList<Integer> calificaciones = new ArrayList<Integer>();
 
-        // - for-each
+        // int numero = 9;   Tipos primitivos
+        // Integer numero = 9;   No primitivos
+        // int == Integer
 
-        for (String name: names) {
-            System.out.println(name);
+
+        calificaciones.add(5);
+        calificaciones.add(8);
+        calificaciones.add(8);
+        calificaciones.add(9);
+        calificaciones.add(7);
+
+        for(Integer calificacion : calificaciones){
+            System.out.println(calificacion);
         }
 
-        HashSet<Integer> numbers = new HashSet<>();
-        numbers.add(1);
-        numbers.add(2);
-        numbers.add(3);
-        numbers.add(4);
-        numbers.add(5);
+        // System.out.println(calificaciones.get(0));
+        // System.out.println(calificaciones.get(1));
+        // System.out.println(calificaciones.get(2));
+        // System.out.println(calificaciones.get(3));
+        // System.out.println(calificaciones.get(4));
 
-        for (Integer number: numbers) {
-            System.out.println(number);
+
+
+        for(int index = 0; index < calificaciones.size(); index++){
+            System.out.println(calificaciones.get(index));
         }
 
-        HashMap<String, String> emails = new HashMap<>();
-        emails.put("Brais", "brais@gmail.com");
-        emails.put("Moure", "moure@gmail.com");
-        emails.put("MoureDev", "mouredev@gmail.com");
 
-        for (Map.Entry<String, String> email: emails.entrySet()) {
-            System.out.println(email.getKey());
-            System.out.println(email.getValue());
+
+        System.out.println("/***************************************************/");
+
+
+        //      Key      Value
+        HashMap<String, String> correos = new HashMap<>();
+        correos.put("Carlos", "carlos@gmail.com" );
+        correos.put("Raul", "raul@hotmail.com" );
+        correos.put("Ismael", "ismael@yahoo.com" );
+
+        for(Map.Entry<String, String> correo : correos.entrySet()){
+            //       key Value
+            //correo [Carlos][carlos@gmail.com]
+
+            System.out.println(correo.getKey());
+            System.out.println(correo.getValue());
         }
-
+        System.out.println("/***************************************************/");
+        
         /*
         Clase 48 - while / do while
         Vídeo: https://youtu.be/JOAqpdM36wI?t=17199
@@ -77,21 +111,21 @@ public class Loops {
             index++;
         }
 
-        index = 0;
-        while (index < names.length) {
-            System.out.println(names[index]);
-            index++;
-        }
+        // index = 0;
+        // while (index < names.length) {
+        //     System.out.println(names[index]);
+        //     index++;
+        // }
 
-        index = 0;
-        boolean find = false;
-        while (!find) {
-            System.out.println(names[index]);
-            if (names[index].equals("Moure")) {
-                find = true;
-            }
-            index++;
-        }
+        // index = 0;
+        // boolean find = false;
+        // while (!find) {
+        //     System.out.println(names[index]);
+        //     if (names[index].equals("Moure")) {
+        //         find = true;
+        //     }
+        //     index++;
+        // }
 
         // - do-while
 
@@ -110,12 +144,12 @@ public class Loops {
 
         // - break
 
-        for (String name: names) {
-            if (name.equals("Moure")) {
-                break;
-            }
-            System.out.println(name);
-        }
+        // for (String name: names) {
+        //     if (name.equals("Moure")) {
+        //         break;
+        //     }
+        //     System.out.println(name);
+        // }
 
         // - continue
 
