@@ -98,66 +98,78 @@ public class Loops {
         }
         System.out.println("/***************************************************/");
         
-        /*
-        Clase 48 - while / do while
-        Vídeo: https://youtu.be/JOAqpdM36wI?t=17199
-        */
-
         // - while
-
-        int index = 0;
-        while (index < 5) {
-            System.out.println("Hola, Java!");
-            index++;
+        
+        
+        System.out.println("/While/");
+        System.out.println("Imprime 5 veces Hola Mundo");
+        
+        int contador = 0;
+        while(contador < 5){
+            System.out.printf("Hola mundo este es el contador:  %d \n", contador);
+            contador++;
         }
-
+        
         // index = 0;
         // while (index < names.length) {
-        //     System.out.println(names[index]);
-        //     index++;
-        // }
+            //     System.out.println(names[index]);
+            //     index++;
+            // }
+        System.out.println("/************** DO WHILE *******************/");
+        
+        
+        int contadorDo = 5;
+        
+        do{
+            System.out.printf("Hola mundo este es el contadorDo:  %d \n", contadorDo);
+            contadorDo++;
+            
+        }while(contadorDo < 5);
+        
+        
 
-        // index = 0;
-        // boolean find = false;
-        // while (!find) {
-        //     System.out.println(names[index]);
-        //     if (names[index].equals("Moure")) {
-        //         find = true;
-        //     }
-        //     index++;
-        // }
+        System.out.println("/************** BREAK *******************/");
+        
+        while(true){
+            System.out.println("Hola mundo infinito");
+            break;
+        }
+        
+        
+        System.out.println("/************** BREAK *******************/");
+        ArrayList<String> apellidos = new ArrayList<>();
+        apellidos.add("Barragan");
+        apellidos.add("Monter");
+        apellidos.add("Martinez");
+        apellidos.add("Lopez");
+        // apellidos.add("Garcia");
 
-        // - do-while
+        if(apellidos.contains("Garcia")){//FALSE
+            System.out.println("Si esta Garcia");
+        }
 
-        index = 0;
-        do {
-            System.out.println("Hola, Java!");
-            index++;
-        } while (index < 0);
 
-        /*
-        Clase 49 - Control de bucles
-        Vídeo: https://youtu.be/JOAqpdM36wI?t=17688
-        */
+        for (String apellido: apellidos){
+            System.out.println(apellido);
 
-        // Control de bucles
+            if(apellido.equals("Garcia")){ //FALSE
+                System.out.println("Se encuentra el apellido Garcia");
+                break;
+            }
+            
+        }
 
-        // - break
+        System.out.println("Sale de la busqueda");
 
         // for (String name: names) {
-        //     if (name.equals("Moure")) {
-        //         break;
-        //     }
-        //     System.out.println(name);
-        // }
+            //     if (name.equals("Moure")) {
+                //         break;
+                //     }
+                //     System.out.println(name);
+                // }
+                
+                // - continue
+                
 
-        // - continue
-
-        for (int i = 0; i < 5; i++) {
-            if (i == 3) {
-                continue;
-            }
-            System.out.println(i);
-        }
     }
 }

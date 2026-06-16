@@ -11,9 +11,9 @@ public class LoopsExercises {
 
     public static void main(String[] args) {
 
-        // 1. Imprime los números del 1 al 10 usando while. NO
+        // 1. Imprime los números del 1 al 10 usando while. YES
 
-        // 2. Usa do-while para mostrar todos los valores de un ArrayList. NO
+        // 2. Usa do-while para mostrar todos los valores de un ArrayList. YES
 
         // 3. Imprime los múltiplos de 5 del 1 al 50 usando for. SI
 
@@ -42,10 +42,29 @@ public class LoopsExercises {
         }
 
 
-        // 8. Usa continue para saltar los múltiplos de 3 del 1 al 20. NO
+        // 8. Usa continue para saltar los múltiplos de 3 del 1 al 20. YES
+        //BREAK
+        //CONTINUE
+        
 
-        // 9. Usa break para detener un bucle cuando encuentres un número negativo en un array. NO
+        System.out.println("Ejercicio 8. multiplos del 3 del 1 al 20");
+        int aux = 1;
+        while(aux < 21){
+            if(aux % 3 == 0){
+                System.out.print(aux + ", ");
+            }
+            aux++;
+        }
+        
 
-        // 10. Crea un programa que calcule el factorial de un número dado. NO
+        for(int j = 1; j<21; j++ ){
+            System.out.println(j);
+            if(j % 3 == 0){
+                System.out.print(j + ", ");
+            }
+        }
+        // 9. Usa break para detener un bucle cuando encuentres un número negativo en un array. YES
+
+        // 10. Crea un programa que calcule el factorial de un número dado. YES
     }
 }
